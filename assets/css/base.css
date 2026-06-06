@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  line-height: 1.6;
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-top: 0;
+  color: var(--color-heading);
+  letter-spacing: -0.035em;
+}
+
+p {
+  margin-top: 0;
+}
+
+main {
+  min-height: 70vh;
+}
+
+ul {
+  padding-left: 1.2rem;
+}

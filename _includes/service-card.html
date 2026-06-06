@@ -1,0 +1,17 @@
+<article class="card service-card">
+  {% if include.status %}
+    <p class="status-badge">{{ include.status }}</p>
+  {% endif %}
+
+  <h2>{{ include.title }}</h2>
+
+  {% if include.text %}
+    <p>{{ include.text }}</p>
+  {% endif %}
+
+  {% if include.url and include.button_text %}
+    <a class="button" href="{{ include.url | relative_url }}">
+      {{ include.button_text }}
+    </a>
+  {% endif %}
+</article>

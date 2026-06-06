@@ -1,0 +1,13 @@
+<section class="cta-box">
+  <h2>{{ include.title | default: "Need help structuring a rough idea?" }}</h2>
+
+  {% if include.text %}
+    <p>{{ include.text }}</p>
+  {% endif %}
+
+  {% if include.button_text and include.button_url %}
+    <a class="button" href="{{ include.button_url | relative_url }}">
+      {{ include.button_text }}
+    </a>
+  {% endif %}
+</section>

@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="post">
+  <div class="container content-narrow">
+    <p class="eyebrow">
+      {{ page.date | date: "%d %b %Y" }}
+      {% if page.categories %}
+        · {{ page.categories | first }}
+      {% endif %}
+    </p>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <hr>
+
+    <section class="response-cta">
+      <h2>Have a thought or question?</h2>
+      <p>Send me a message or email me. I’m using these posts to think aloud and shape practical services slowly.</p>
+      <p><a href="{{ '/contact/' | relative_url }}">Contact me</a></p>
+    </section>
+  </div>
+</article>

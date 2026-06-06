@@ -1,0 +1,41 @@
+title: 'Ferdin Raphael'
+description: 'Writing and practical work by Ferdin Raphael.'
+baseurl: ''
+url: ''
+
+author:
+  name: 'Ferdin Raphael'
+  email: ''
+
+timezone: 'Asia/Kolkata'
+
+markdown: kramdown
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+
+nav:
+  - title: 'Home'
+    url: '/'
+  - title: 'Writing'
+    url: '/blog/'
+  - title: 'Contact'
+    url: '/contact/'
+
+analytics:
+  provider: 'none'
+  cloudflare_token: ''
+
+comments:
+  enabled: false

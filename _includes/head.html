@@ -1,0 +1,28 @@
+<meta charset="utf-8" />
+{% include seo.html %}
+
+<script>
+  (function () {
+    var storedTheme = localStorage.getItem('theme');
+    var prefersDark =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = storedTheme || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/variables.css' | relative_url }}"
+/>
+<link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/assets/css/layout.css' | relative_url }}" />
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/components.css' | relative_url }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/utilities.css' | relative_url }}"
+/>

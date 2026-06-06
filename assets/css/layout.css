@@ -1,0 +1,114 @@
+.container {
+  width: min(100% - 2rem, 1120px);
+  margin-inline: auto;
+}
+
+.content-narrow {
+  width: min(100% - 2rem, 760px);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(12px);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-block: 0.9rem;
+}
+
+.site-logo {
+  font-weight: 800;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: var(--color-muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--color-accent-dark);
+}
+
+.site-footer {
+  margin-top: 0;
+  padding-block: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-soft);
+  color: var(--color-muted);
+}
+
+.hero {
+  padding-block: clamp(4rem, 9vw, 7rem);
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      color-mix(in srgb, var(--color-accent) 16%, transparent),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      color-mix(in srgb, var(--color-accent) 8%, transparent),
+      transparent 28%
+    ),
+    var(--color-bg);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
+.page-section {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+}
+
+.section-muted {
+  background: var(--color-bg-soft);
+  border-block: 1px solid var(--color-border);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: var(--space-xl);
+}
+
+.single-card-row {
+  max-width: 560px;
+}
+
+@media (max-width: 860px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    gap: var(--space-sm);
+  }
+}

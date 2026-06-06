@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">{{ page.service_status | default: "Service" }}</p>
+    <h1>{{ page.hero_title | default: page.title }}</h1>
+
+    {% if page.hero_subtitle %}
+      <p class="hero-subtitle">{{ page.hero_subtitle }}</p>
+    {% endif %}
+
+    {% if page.primary_cta_text and page.primary_cta_url %}
+      <a class="button" href="{{ page.primary_cta_url | relative_url }}">
+        {{ page.primary_cta_text }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container content-narrow">
+    {{ content }}
+  </div>
+</section>
