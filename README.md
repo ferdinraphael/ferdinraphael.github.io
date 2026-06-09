@@ -1,31 +1,21 @@
 # Ferdin Raphael
 
-Main personal hub for writing, projects, services, samples, and practical digital experiments.
+Personal website and writing hub for Ferdin Raphael.
 
-## Purpose
+Built with Jekyll and hosted on GitHub Pages.
 
-This site will act as the central hub for:
+## Current status
 
-- practical blog posts
-- service pages
-- digital resume
-- work samples
-- downloadable resources
-- future service links
+This site is in its early foundation stage.
 
-## Current Phase
+It currently includes:
 
-Phase 1: Technical Foundation + Main Hub Skeleton
+- Home page
+- Writing page
+- Contact page
+- First writing post
 
-Current focus:
-
-- main hub skeleton
-- blog structure
-- contact page
-- placeholder about/resume pages
-- first Website-in-a-Weekend support post
-
-## Local Setup
+## Local Development
 
 Install dependencies:
 
@@ -39,6 +29,12 @@ Run locally:
 bundle exec jekyll serve
 ```
 
+Build the site:
+
+```bash
+bundle exec jekyll build
+```
+
 Open:
 
 ```bash
@@ -47,6 +43,4 @@ http://localhost:4000
 
 ## Notes
 
-This site uses Jekyll and GitHub Pages.
-
-No backend, payment system, comments, or complex analytics are included in Phase 1.
+This site will grow gradually through writing, small experiments, and practical work.

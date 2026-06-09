@@ -2,7 +2,7 @@
 layout: post
 title: 'I Am a Developer, But That Is Not the Whole Story'
 date: 2026-04-05 09:00:00 +0530
-description: 'Development taught me to look beneath the surface. Over time, I started noticing that software is not the only thing with bugs, and people are never only the labels we use for them.'
+description: 'Development taught me to look beneath the surface. Over time, I started noticing that software is not the only thing with bugs.'
 excerpt: 'Development taught me to look beneath the surface. Over time, I started noticing that software is not the only thing with bugs.'
 categories:
   - writing
