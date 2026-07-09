@@ -34,7 +34,9 @@ nav:
     url: '/contact/'
 
 analytics:
-  provider: 'none'
+  provider: 'goatcounter_ga4'
+  goatcounter_code: 'ferdin-identity'
+  google_analytics_id: 'G-93KKGBL8QD'
   cloudflare_token: ''
 
 comments:

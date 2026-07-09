@@ -1,4 +1,25 @@
-{% if site.analytics.provider == "cloudflare" and site.analytics.cloudflare_token %}
-  <!-- Cloudflare Web Analytics placeholder.
+{% if site.analytics.goatcounter_code %}
+<script
+  data-goatcounter="https://{{ site.analytics.goatcounter_code }}.goatcounter.com/count"
+  async
+  src="//gc.zgo.at/count.js"
+></script>
+{% endif %} {% if site.analytics.google_analytics_id %}
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google_analytics_id }}"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.analytics.google_analytics_id }}');
+</script>
+{% endif %} {% if site.analytics.provider == "cloudflare" and
+site.analytics.cloudflare_token %}
+<!-- Cloudflare Web Analytics placeholder.
        Add script here later when analytics is enabled. -->
 {% endif %}
