@@ -4,17 +4,20 @@ page_title | append: " | " | append: site.title %} {% endunless %} {% assign
 meta_description = page.description | default: page.excerpt | default:
 site.description | strip_html | strip_newlines | truncate: 160 %}
 
-<title>{{ meta_title }}</title>
-<meta name="description" content="{{ meta_description }}" />
+<title>{{ meta_title | escape }}</title>
+<meta name="description" content="{{ meta_description | escape }}" />
 
-<meta property="og:title" content="{{ meta_title }}" />
-<meta property="og:description" content="{{ meta_description }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+<meta property="og:title" content="{{ meta_title | escape }}" />
+<meta property="og:description" content="{{ meta_description | escape }}" />
 <meta
   property="og:type"
   content="{% if page.layout == 'post' %}article{% else %}website{% endif %}"
 />
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:site_name" content="{{ site.title | escape }}" />
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="{{ meta_title }}" />
-<meta name="twitter:description" content="{{ meta_description }}" />
+<meta name="twitter:title" content="{{ meta_title | escape }}" />
+<meta name="twitter:description" content="{{ meta_description | escape }}" />

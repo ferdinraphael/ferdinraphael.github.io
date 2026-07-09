@@ -7,12 +7,9 @@
   <body>
     {% include header.html %}
 
-    <main id="main-content">
-      {{ content }}
-    </main>
+    <main id="main-content">{{ content }}</main>
 
     {% include footer.html %}
-    {% include analytics.html %}
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
