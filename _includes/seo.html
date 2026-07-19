@@ -18,6 +18,18 @@ site.description | strip_html | strip_newlines | truncate: 160 %}
 <meta property="og:url" content="{{ page.url | absolute_url }}" />
 <meta property="og:site_name" content="{{ site.title | escape }}" />
 
+<meta name="application-name" content="{{ site.title | escape }}" />
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{% if page.layout == 'post' %}Article{% else %}WebSite{% endif %}",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "description": {{ site.description | jsonify }}
+  }
+</script>
+
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="{{ meta_title | escape }}" />
 <meta name="twitter:description" content="{{ meta_description | escape }}" />
