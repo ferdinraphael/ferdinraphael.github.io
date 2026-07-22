@@ -1,9 +1,9 @@
+{% assign current_year = site.time | date: "%Y" %} {% assign post_year =
+include.post.date | date: "%Y" %}
 <article class="card blog-card">
   <p class="eyebrow">
-    {{ include.post.date | date: "%d %b %Y" }}
-    {% if include.post.categories %}
-      · {{ include.post.categories | first }}
-    {% endif %}
+    {% if post_year == current_year %} {{ include.post.date | date: "%b %-d" }}
+    {% else %} {{ include.post.date | date: "%b %-d, %Y" }} {% endif %}
   </p>
 
   <h2>
@@ -13,8 +13,8 @@
   </h2>
 
   {% if include.post.description %}
-    <p>{{ include.post.description }}</p>
+  <p>{{ include.post.description }}</p>
   {% else %}
-    <p>{{ include.post.excerpt | strip_html | truncate: 160 }}</p>
+  <p>{{ include.post.excerpt | strip_html | truncate: 160 }}</p>
   {% endif %}
 </article>

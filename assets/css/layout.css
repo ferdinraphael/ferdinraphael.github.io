@@ -112,3 +112,67 @@
     gap: var(--space-sm);
   }
 }
+
+.hero-copy--standalone {
+  max-width: 860px;
+}
+
+/* Homepage v2 spacing */
+
+.hero {
+  padding-block: clamp(3rem, 7vw, 5.25rem);
+}
+
+.page-section {
+  padding-block: clamp(2rem, 4.5vw, 3.25rem);
+}
+
+.home-writing {
+  padding-top: clamp(2.5rem, 5.5vw, 4rem);
+}
+
+.home-purpose-section {
+  padding-block: clamp(2rem, 4vw, 3rem);
+}
+
+.home-explore-section {
+  padding-block: clamp(2.25rem, 4.5vw, 3.25rem);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-block: 2.75rem 3.25rem;
+  }
+
+  .page-section {
+    padding-block: 2rem;
+  }
+}
+
+/* Homepage v3 spacing refinements */
+
+.hero {
+  padding-block: clamp(2.5rem, 5.5vw, 4.25rem);
+}
+
+.home-writing {
+  padding-top: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.home-purpose-section {
+  padding-block: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.home-explore-section {
+  padding-block: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-block: 2.25rem 2.75rem;
+  }
+
+  .home-writing {
+    padding-top: 1.5rem;
+  }
+}

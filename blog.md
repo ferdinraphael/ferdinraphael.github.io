@@ -5,7 +5,7 @@ description: 'Notes and reflections by Ferdin Raphael.'
 permalink: /blog/
 ---
 
-This is where I slow down, connect ideas, and put useful thoughts into words.
+This is where I slow down, connect ideas, and work out what I think.
 
 Some posts may be practical. Some may be exploratory. Over time, this page will collect the ideas and patterns I keep returning to.
 

@@ -4,6 +4,8 @@ title: 'Before an Idea Becomes Real'
 date: 2026-06-28 09:00:00 +0530
 description: 'A reflection on why many ideas remain stuck in the mind, and why the first small step matters more than a perfect plan.'
 excerpt: 'Most ideas do not need a perfect plan at the beginning. The ones we keep returning to may only need one small first step.'
+categories:
+  - writing
 tags:
   - writing
   - ideas
